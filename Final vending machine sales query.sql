@@ -52,7 +52,7 @@ FROM vending_machine_sales;
 
 
 SELECT Location,
-	SUM(LineTotal)
+	SUM(LineTotal) as Total_Sales
 FROM vending_machine_sales 
 GROUP BY Location
 ORDER BY 1 desc;
